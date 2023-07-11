@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css">
+
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+    <script src="./assets/js/splite.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</head>
+<body >
+    <header class="header">
+        <div class="inner_menu">
+            <h1>
+                <a href="#" class="logo">
+                    <span class="blind">TERRAZA BALEAR LOGO</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="135.449" height="33.134" viewBox="0 0 135.449 33.134">
+                        <path d="M108.184,88.374H93.928V84.661h14.257Zm0,7.555H93.928V92.215h14.257Zm0,7.647H93.928V99.863h14.257Zm11.279-9.726c2.034,0,3.2-1.084,3.2-2.682v-.055c0-1.788-1.25-2.709-3.283-2.709h-4.15V93.85Zm-8.408-9.209h8.68a7.569,7.569,0,0,1,5.533,1.923,5.943,5.943,0,0,1,1.628,4.333v.055a5.89,5.89,0,0,1-4.068,5.877l4.636,6.771h-4.881l-4.069-6.066h-3.282V103.6h-4.176Zm28.289,9.209c2.034,0,3.2-1.084,3.2-2.682v-.055c0-1.788-1.247-2.709-3.281-2.709h-4.149V93.85Zm-8.408-9.209h8.678a7.561,7.561,0,0,1,5.532,1.923,5.944,5.944,0,0,1,1.628,4.333v.055a5.889,5.889,0,0,1-4.067,5.877l4.636,6.771h-4.88L138.4,97.533h-3.282V103.6h-4.177ZM161.72,95.664,159.2,89.516l-2.522,6.148ZM157.326,84.5h3.851l8.137,19.1h-4.368l-1.734-4.253h-8.029l-1.736,4.253h-4.258Zm14.619,15.926L182.388,88.3H172.27V84.64h15.487v3.169L177.316,99.944h10.442V103.6H171.945Zm30.946-4.767-2.522-6.148-2.522,6.148ZM198.5,84.5h3.851l8.138,19.1H206.12l-1.737-4.253h-8.027L194.62,103.6h-4.258ZM91.082,88.379H75.376V84.651H91.082ZM81.13,92.2h4.128v11.4H81.13Zm4.154,24.5c1.393,0,2.259-.616,2.259-1.641v-.026c0-1-.84-1.575-2.442-1.575H82.2v3.242Zm-.367-4.163c1.249,0,2.115-.564,2.115-1.641v-.025c0-.907-.723-1.5-2.035-1.5H82.2v3.164Zm-3.742-4.1h3.913a3.377,3.377,0,0,1,2.4.814,2.041,2.041,0,0,1,.59,1.472v.025a2.22,2.22,0,0,1-1.457,2.128c1.09.328,1.97.958,1.97,2.219v.027c0,1.575-1.327,2.508-3.335,2.508H81.174Zm30.421,5.831-2.089-4.689-2.1,4.689Zm-2.561-5.9h.972l4.189,9.258H113.08L112,115.209h-5l-1.089,2.429h-1.064Zm21.951.066h1.038v8.233H137.2v.959h-6.212Zm23.106,0h6.645v.946h-5.608v3.138h5.018v.946h-5.018v3.217H160.8v.946h-6.711Zm29.74,5.831-2.088-4.689-2.1,4.689Zm-2.562-5.9h.972l4.19,9.258h-1.116l-1.078-2.429h-5l-1.089,2.429h-1.064Zm25.812,4.754c1.38,0,2.365-.71,2.365-1.892v-.026c0-1.129-.868-1.812-2.352-1.812h-2.836v3.73Zm-3.86-4.689h3.953a3.625,3.625,0,0,1,2.613.918,2.543,2.543,0,0,1,.709,1.813v.027a2.69,2.69,0,0,1-2.5,2.679l2.824,3.755h-1.274l-2.666-3.573h-2.625v3.573h-1.038Z" transform="translate(-75.376 -84.505)" fill="#46484b"></path>
+                    </svg>
+                </a>
+            </h1>
+            <nav class="menu_nav">
+                <ul class="menu_list">
+                    <li class="menu_item"><a href="#">Projects</a></li>
+                    <li class="menu_item"><a href="#">services</a></li>
+                    <li class="menu_item"><a href="#">Brands</a></li>
+                    <li class="menu_item"><a href="#">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="btn_menu" aria-label="메뉴">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="sub_menu_bg">
+            <ul class="video_list">
+                <li class="video_item">
+                    <video src="./assets/img/header_video_1.mp4" muted="" autoplay="" loop=""></video>
+                </li>
+                <li class="video_item">
+                    <video src="./assets/img/header_video_2.mp4" muted="" autoplay="" loop=""></video>
+                </li>
+                <li class="video_item">
+                    <video src="./assets/img/header_video_3.mp4" muted="" autoplay="" loop=""></video>
+                </li>
+                <li class="video_item">
+                    <video src="./assets/img/header_video_4.mp4" muted="" autoplay="" loop=""></video>
+                </li>
+                <li class="video_item">
+                    <video src="./assets/img/header_video_5.mp4" muted="" autoplay="" loop=""></video>
+                </li>
+            </ul>
+            <div class="sub_menu_content">
+                <div class="center">
+                    <ul class="sub_menu_list">
+                        <li class="sub_menu_item" data-num="0"><a href="#">HOME</a></li>
+                        <li class="sub_menu_item" data-num="1"><a href="#">PROJECTS</a></li>
+                        <li class="sub_menu_item" data-num="2"><a href="#">SERVICES</a></li>
+                        <li class="sub_menu_item" data-num="3"><a href="#">BRANDS</a></li>
+                        <li class="sub_menu_item" data-num="4"><a href="#">ABOUT US</a></li>
+                    </ul>
+                    <ul class="sub_inner_menu_list">
+                        <li class="sub_inner_menu_item"><a href="#">Magazine</a></li>
+                        <li class="sub_inner_menu_item"><a href="#">Events</a></li>
+                        <li class="sub_inner_menu_item"><a href="#">Press</a></li>
+                        <li class="sub_inner_menu_item"><a href="#">Showrooms</a></li>
+                        <li class="sub_inner_menu_item"><a href="#">Contact</a></li>
+                    </ul>
+                    <ul class="sns_list">
+                        <li class="sns_item"><a href="#"><i class="fas fa-brands fa-instagram"></i><span class="blind">인스타그램</span></a></li>
+                        <li class="sns_item"><a href="#"><i class="fas fa-brands fa-facebook-f"></i><span class="blind">페이스북</span></a></li>
+                        <li class="sns_item"><a href="#"><i class="fas fa-brands fa-youtube"></i><span class="blind">유튜브</span></a></li>
+                        <li class="sns_item"><a href="#"><i class="fas fa-brands fa-pinterest"></i><span class="blind">핀터레스트</span></a></li>
+                        <li class="sns_item"><a href="#"><i class="fas fa-brands fa-linkedin-in"></i><span class="blind">IN</span></a></li>
+                    </ul>
+                    <ul class="lang_list">
+                        <li class="lang_item"><a href="#">EN</a></li>
+                        <li class="lang_item"><a href="#">ES</a></li>
+                        <li class="lang_item"><a href="#">DE</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <button class="close_btn" aria-label="닫기">
+                <span style="translate: none; rotate: none; scale: none; transform: translate(10px, -2px) rotate(45deg);"></span>
+                <span style="translate: none; rotate: none; scale: none; transform: scale(0, 1);"></span>
+                <span style="translate: none; rotate: none; scale: none; transform: translate(10px, -11px) rotate(-45deg);"></span>
+            </button>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <section class="sc_visual motion_text">
+                <h2>
+                    <span class="desc">
+                        <span>CLOSE</span>
+                        <span>YOUR</span>
+                        <span>EYES.</span>
+                    </span>
+                    <span class="desc">
+                        <span>FEEL</span>
+                        <span>THE</span>
+                        <span>EMBRACE</span>
+                    </span>
+                    <span class="desc">
+                        <span>OF</span>
+                        <span>A</span>
+                        <span>DREAMLIKE</span>
+                    </span>
+                    <span class="desc">
+                        <span>ENVIRONMENT</span>
+                    </span>
+                </h2>
+
+                <div class="video-wrapper">
+                    <div class="group_video">
+                        <video preload="metadata" loop="" playsinline="" muted="" autoplay autoplay-onscroll="" data-desktop="" >
+                            <source src="https://terrazabalear.com/wp-content/uploads/2023/03/terraza_balear-awakening_senses_-_loop-1.mp4-1080p-1.mp4" type="video/mp4">
+                        </video>
+                        <button type="button" class="btn_video_open">
+                            <span class="wrap">
+                                <span>Play video</span>
+                                <span>Play video</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+
+
+        <section class="sc_aboutus">
+            <div class="common_inner" data-textbox>
+                <h2 class="blind">about us</h2>
+                <div class="group_flex">
+                    <div class="left_area">
+                        <p class="desc">The sun illuminates the stone</p>
+                        <p class="desc">walls. A warm breeze</p>
+                        <p class="desc">envelops you. Step into the</p>
+                        <p class="desc">joy of your own home.</p>
+                    </div>
+                    <div class="right_area">
+                        <p class="desc">Terraza Balear was born out of love and appreciation for Mediterranean culture, its way of life and rituals. We create interiors that seek to excite and awaken the senses with emotions of serenity, harmony and connection with the environment. Sublime, timeless spaces full of beauty have become our identity.</p>
+                    </div>
+                    <div class="bottom_area">
+                        <a href="#" class="link_title wh">
+                            <span class="dat"></span>
+                            <span class="title">About us</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc_projects">
+            <h2>LATEST PROJECTS</h2>
+            <div class="group_slide">
+                <div class="swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="wrap" data-swiper-parallax-y="100%">
+                                <img src="./assets/img/slide1_1.webp" alt class="bg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrap" data-swiper-parallax-y="100%">
+                                <img src="./assets/img/slide1_2.webp" alt class="bg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrap" data-swiper-parallax-y="100%">
+                                <img src="./assets/img/slide1_3.webp" alt class="bg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrap" data-swiper-parallax-y="100%">
+                                <img src="./assets/img/slide1_4.webp" alt class="bg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrap" data-swiper-parallax-y="100%">
+                                <img src="./assets/img/slide1_5.webp" alt class="bg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opacity_bg"></div>
+
+                    <div class="control_area">
+
+                        <div class="control">
+                            <span class="curr">${current}</span>
+                            <span class="bar">
+                                <i class="bar_curr"></i>
+                            </span>
+                            <span class="total">${total}</span>
+                        </div>
+
+                        <div class="btns">
+                            <button class="prev" aria-label="이전">
+                                <i class="fas fa-thin fa-arrow-left-long"></i>
+                                <i class="fas fa-thin fa-arrow-left-long"></i>
+                            </button>
+                            <button class="next" aria-label="다음">
+                                <i class="fas fa-thin fa-arrow-right-long"></i>
+                                <i class="fas fa-thin fa-arrow-right-long"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <span class="title">Breathe</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="title">Serene</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="title">Bonanova</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="title">Mar i Cel</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="title">Can<br>Morgues</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="wrap" data-swiper-parallax-x="100%">
+                                <video src="./assets/img/video_1.mp4" loop="" muted="" autoplay=""></video>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrap" data-swiper-parallax-x="100%">
+                                <video src="./assets/img/video_2.mp4" loop="" muted="" autoplay=""></video>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrap" data-swiper-parallax-x="100%">
+                                <video src="./assets/img/video_3.mp4" loop="" muted="" autoplay=""></video>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrap" data-swiper-parallax-x="100%">
+                                <video src="./assets/img/video_4.mp4" loop="" muted="" autoplay=""></video>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrap" data-swiper-parallax-x="100%">
+                                <video src="./assets/img/video_5.mp4" loop="" muted="" autoplay=""></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="group_link">
+                <a href="#" class="link_title dark">
+                    <span class="dat"></span>
+                    <span class="title">All projects</span>
+                </a>
+            </div>
+        </section>
+
+
+
+        <section class="sc_services motion_text">
+            <h2>
+                <p class="desc">
+                    <span>EXPERIENCES</span>
+                    <span>THAT</span>
+                </p>
+                <p class="desc">
+                    <span>EXCEED</span>
+                    <span>THE</span>
+                    <span>REALITY</span>
+                </p>
+                <p class="desc">
+                    <span>WE</span>
+                    <span>LIVE</span>
+                    <span>IN</span>
+                </p>
+            </h2>
+            <div class="gorup_slide">
+                <div class="slide_top_area">
+                    <ul class="slide_list">
+                        <li class="slide_item"><img src="./assets/img/list_img1.webp" alt></li>
+                        <li class="slide_item"><img src="./assets/img/list_img2.webp" alt></li>
+                        <li class="slide_item"><img src="./assets/img/list_img3.webp" alt></li>
+                        <li class="slide_item"><img src="./assets/img/list_img4.webp" alt></li>
+                        <li class="slide_item"><img src="./assets/img/list_img5.webp" alt></li>
+                    </ul>
+                </div>
+                <div class="slide_bottom_area">
+                    <ul class="slide_list">
+                        <li class="slide_item"><img src="./assets/img/list_img6.webp" alt></li>
+                        <li class="slide_item"><img src="./assets/img/list_img7.webp" alt></li>
+                        <li class="slide_item"><img src="./assets/img/list_img8.webp" alt></li>
+                        <li class="slide_item"><img src="./assets/img/list_img9.webp" alt></li>
+                        <li class="slide_item"><img src="./assets/img/list_img10.webp" alt></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="common_inner" data-textbox>
+                <div class="group_flex">
+                    <div class="left_area">
+                        <strong class="desc">
+                            We go wherever you are to<br>
+                            give shape to the place you<br>
+                            have envisioned.
+                        </strong>
+                    </div>
+                    <div class="right_area">
+                        <p class="desc">Our exceptional multinational team offers reliable quality services both nationally and internationally. Nature, architecture, design, beauty itself and contemporary art inspire us. And yet, what inspires us the most, is to get to know those who will live in our homes and to translate their physical and emotional desires into tailored interiors.</p>
+                    </div>
+                    <div class="bottom_area">
+                        <a href="#" class="link_title wh">
+                            <span class="dat"></span>
+                            <span class="title">Our Services</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sc_info">
+
+            <div class="group_img">
+                <h2>
+                    <p class="desc">BE</p>
+                    <p class="desc">INSPIRED</p>
+                </h2>
+
+                <img src="./assets/img/info_img1.webp" alt class="top">
+                <video src="./assets/img/bottom_video.mp4" loop="" muted="" autoplay=""></video>
+                <img src="./assets/img/info_img2.webp" alt class="bottom">
+            </div>
+
+
+
+        </section>
+        <section class="sc_link">
+            <div class="common_inner">
+                <h2 class="blind">link us</h2>
+
+                <div class="text_box">
+                    <div class="desc_wrap">
+                        <p class="desc">RELAX, GET CARRIED</p>
+                    </div>
+                    <div class="desc_wrap">
+                        <p class="desc">AWAY AND ENJOY</p>
+                    </div>
+                    <div class="desc_wrap">
+                        <p class="desc">DESIGN</p>
+                    </div>
+                </div>
+
+                <div class="link_box">
+                    <ul class="link_list">
+                        <li class="link_item">
+                            <div class="title_wrap">
+                                <span class="title">Contact us</span>
+                            </div>
+                            <a href="https://terrazabalear.com/contact/">FORM</a>
+                        </li>
+                        <li class="link_item">
+                            <div class="title_wrap">
+                                <span class="title">Call us</span>
+                            </div>
+                            <a href="tel:+34971698258">+34 971 698 258</a>
+                        </li>
+                        <li class="link_item">
+                            <div class="title_wrap">
+                                <span class="title">Contact us</span>
+                            </div>
+                            <a href="https://wa.me/+34661716064">+34 661 71 60 64</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="blind">footer</h2>
+        <div class="common_inner">
+            <div class="common_flex">
+                <section class="sc_news">
+                    <h2>NEWSLETTER</h2>
+                    <form action="">
+                        <fieldset>
+                            <legend class="blind"></legend>
+                            <div class="input_box">
+                                <input type="email" class="email" placeholder="Enter your email here">
+                                <button><span class="text">Subscribe</span></button>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                </section>
+                <section class="sc_follow">
+                    <h2>FOLLOW US</h2>
+                    <ul class="sns_list">
+                        <li class="sns_item">
+                            <a href="https://www.instagram.com/terrazabalear/" aria-label="Link to https://www.instagram.com/terrazabalear/" class="link_sns">
+                                <span class="icon">
+                                    <i class="fa-brands fa-instagram"><span class="blind">instagram</span></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sns_item">
+                            <a href="https://www.facebook.com/terrazabalear/" aria-label="Link to https://www.facebook.com/terrazabalear/" class="link_sns">
+                                <span class="icon">
+                                    <i class="fa-brands fa-facebook-f"><span class="blind">facebook</span></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sns_item">
+                            <a href="https://www.youtube.com/channel/UCF2LDHLpfoxyvbGgqu7537g" aria-label="Link to https://www.youtube.com/channel/UCF2LDHLpfoxyvbGgqu7537g" class="link_sns">
+                                <span class="icon">
+                                    <i class="fa-brands fa-youtube"><span class="blind">youtube</span></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sns_item">
+                            <a href="https://www.pinterest.es/terrazabalear/" aria-label="Link to https://www.pinterest.es/terrazabalear/" class="link_sns">
+                                <span class="icon">
+                                    <i class="fa-brands fa-pinterest"><span class="blind">pinterest</span></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sns_item">
+                            <a href="https://www.linkedin.com/company/terraza-balear/about/" aria-label="Link to https://www.linkedin.com/company/terraza-balear/about/" class="link_sns">
+                            <span class="icon">
+                                <i class="fa-brands fa-linkedin-in"><span class="blind">linkedin</span></i>
+                            </span>
+                        </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <section class="sc_members">
+                <h2>MEMBERS OF</h2>
+                <ul class="member_list">
+                    <li class="member_item">
+                        <a href="#" class="link_member">
+                            <img src="./assets/img/footer_img1.webp" alt>
+                        </a>
+                    </li>
+                    <li class="member_item">
+                        <a href="#" class="link_member">
+                            <img src="./assets/img/footer_img2.webp" alt>
+                        </a>
+                    </li>
+                    <li class="member_item">
+                        <a href="#"  class="link_member">
+                            <img src="./assets/img/footer_img3.webp" alt>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <div class="copy_box">
+                <address class="copy_desc">
+                    <span>© 2023 | </span>
+                    <span>TERRAZA BALEAR S.L. | </span>
+                    <span>CALLE ISLAS BALEARES 18 | </span>
+                </address>
+                <ul class="footer_list">
+                    <li class="footer_item">
+                        <a href="#">Legal notice</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="#">Cookies policy</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="#">Privacy policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
