@@ -1,8 +1,4 @@
 $(function(){
-    // let lastScroll = 0;
-
-
-
     gsap.to('.header .inner_menu',{
         scrollTrigger:{
             trigger:".header",
